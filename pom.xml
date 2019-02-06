@@ -7,7 +7,7 @@
     <name>elasticsearch-binary-vector-scoring</name>
     <groupId>ai.iambot.elasticsearch</groupId>
     <artifactId>elasticsearch-binary-vector-scoring</artifactId>
-    <version>6.5.4</version>
+    <version>1.0.0-SNAPSHOT</version>
     <description>ElasticSearch Plugin for Binary Vector Scoring</description>
     
     <licenses>
