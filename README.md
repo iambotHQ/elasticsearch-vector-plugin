@@ -4,7 +4,7 @@ Elasticsearch binary vector scoring plugin based on [lior-k](https://github.com/
 
 In comparision to lior-k version:
 
- * Fix cosine calculation
+ * Fixed cosine equation
  * Provide more metrics
  * Utilize new ScoreScript API
  * Some code cleanups
