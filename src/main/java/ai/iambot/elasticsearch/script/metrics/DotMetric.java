@@ -19,12 +19,8 @@ public class DotMetric implements Metric{
         double dotProduct = 0.0;
         for (int i = 0; i < queryVector.length; i++) {
             queryVectorNorm += queryVector[i]*queryVector[i];
-            dotProduct += queryVector[i] * inputVector[i];
+            dotProduct += Math.pow(queryVector[i], 2);
         }
-        if (queryVectorNorm == 0 || inputVectorMagnitude == 0){
-            return new DotMetricResult(queryVectorNorm, 0.0);
-        } else {
-            return new DotMetricResult(queryVectorNorm, dotProduct);
-        }
+        return new DotMetricResult(Math.sqrt(queryVectorNorm), dotProduct);
     }
 }
