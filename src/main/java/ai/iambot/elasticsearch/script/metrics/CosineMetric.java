@@ -8,7 +8,7 @@ public class CosineMetric extends DotMetric{
     @Override
     public double metric(double[] queryVector) {
         DotMetricResult dot = super.dotMetric(queryVector);
-        if ( inputVectorMagnitude == 0 || dot.getQueryVectorNorm() == 0){
+        if ( inputVectorMagnitude == 0.0 || dot.getQueryVectorNorm() == 0.0){
             return 0.0;
         } else {
             return dot.getDot() / (dot.getQueryVectorNorm() * inputVectorMagnitude);
